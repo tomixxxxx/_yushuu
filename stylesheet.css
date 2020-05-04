@@ -163,11 +163,11 @@ to {
 }
 
 #about p .red{
-  color: rgb(255, 64, 64);
+  color: rgb(248, 118, 118);
 }
 
 #about p .blue{
-  color: rgb(64, 64, 255);
+  color: rgb(96, 166, 231);
 }
 
 
@@ -233,5 +233,5 @@ screen and (max-width: 1024px){
     font-size: 12px;
   }
 
-  
+
 }
