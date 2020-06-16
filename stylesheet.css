@@ -15,6 +15,10 @@ p{
   letter-spacing: 2px;
 }
 
+li{
+  list-style-type: none;
+}
+
 body{
   font-family: Julius Sans One;
 }
@@ -168,7 +172,146 @@ to {
   color: rgb(96, 166, 231);
 }
 
+.input-cb{
+  line-height: 200px;
+}
 
+.open{
+  z-index: 0;
+  padding: 30px;
+  border: black solid 1px;
+  background-color:  rgba(105, 194, 193);
+  color: white;
+  width: fit-content;
+}
+
+.open-space{
+  display: none;
+}
+
+#cb{
+  position: absolute;
+  left: -50vw;
+}
+
+.bg-black{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+input[type="checkbox"]:checked ~ .bg-black{
+  display: block;
+  z-index: 110;
+  color: white;
+}
+
+.word{
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+  animation-name: floating;
+  animation-duration: 20s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.word:hover{
+  font-size: 70px;
+  color: black;
+}
+
+.w1{
+  position: absolute;
+  left: 15.5%;
+  animation-delay: -0s;
+  transition: 0.5s;
+}
+
+.w2{
+  position: absolute;
+  left: 25.5%;
+  animation-delay: -6s;
+  transition: 0.5s;
+}
+
+.w3{
+  position: absolute;
+  left: 35.5%;
+  animation-delay: -17s;
+  transition: 0.5s;
+}
+
+.w4{
+  position: absolute;
+  left: 45.5%;
+  animation-delay: -10s;
+  transition: 0.5s;
+
+}
+
+.w5{
+  position: absolute;
+  left: 55.5%;
+  animation-delay: -14s;
+  transition: 0.5s;
+}
+
+.w6{
+  position: absolute;
+  left: 65.5%;
+  animation-delay: -3s;
+  transition: 0.5s;
+}
+
+.w7{
+  position: absolute;
+  left: 75.5%;
+  animation-delay: -20s;
+  transition: 0.5s;
+}
+
+.close{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  font-size: 100px;
+  opacity: 0.5;
+  border: white solid 3px;
+  border-radius: 10%;
+}
+
+@keyframes floating {
+0% {
+  top: 40%;
+  transform: rotate(3deg);
+}
+20% {
+  top: 42%;
+  transform: rotate(-3deg);
+}
+40% {
+  top: 38%;
+}
+60% {
+  top: 42%;
+  transform: rotate(3deg);
+}
+80% {
+  top: 38%;
+}
+100% {
+  top: 40%;
+  transform: rotate(-3deg);
+}
+}
 
 /*スマホ対応*/
 @media
@@ -230,6 +373,47 @@ screen and (max-width: 1024px){
   #about h2 span{
     font-size: 12px;
   }
+
+  .word{
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .word:hover{
+    font-size: 50px;
+    color: black;
+  }
+
+  .w1{
+    left: 17%;
+  }
+  
+  .w2{
+    left: 27%;
+  }
+  
+  .w3{
+    left: 37%;
+  }
+  
+  .w4{
+    left: 47%;
+  
+  }
+  
+  .w5{
+    left: 57%;
+  }
+  
+  .w6{
+    left: 67%;
+  }
+  
+  .w7{
+    left: 77%;
+  }
+  
 
 
 }
