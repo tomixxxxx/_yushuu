@@ -333,7 +333,12 @@ input[type="checkbox"]:checked ~ .bg-black{
 }
 
 .cv-test{
-  font-size: 100px;
+  height: 100px;
+}
+
+.cv-test a{
+  line-height: 100px;
+  font-size: 20px;
 }
 
 /*スマホ対応*/
